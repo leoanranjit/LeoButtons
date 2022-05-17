@@ -24,13 +24,17 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/leoanranjit/LeoButtons'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Leoan Ranjit' => 'leoanranjit1991@gmail.com' }
+  s.author           = { 'Leoan Ranjit' => 'demonlr509@gmail.com' }
   s.source           = { :git => 'https://github.com/leoanranjit/LeoButtons.git', :tag => s.version.to_s }
-   s.social_media_url = 'https://www.instagram.com/leoanranjit/'
+   s.social_media_url = 'https://www.instagram.com/leoanranjit'
 
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'Source/**/*.swift'
+  s.swift_versions = '5.0'
+  s.platforms = {
+      "ios": "13.0"
+  }
   
   # s.resource_bundles = {
   #   'LeoButtons' => ['LeoButtons/Assets/*.png']
