@@ -1,24 +1,27 @@
 //
 //  ViewController.swift
-//  LeoButtons
+//  InteractiveButtons
 //
-//  Created by Leoan Ranjit on 05/17/2022.
-//  Copyright (c) 2022 Leoan Ranjit. All rights reserved.
+//  Created by Leoan Ranjit on 5/13/22.
 //
 
 import UIKit
+import LeoButtons
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var btnLoad: LeoButtons!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func btnLoadAction(_ sender: Any) {
+        btnLoad.startLoading()
     }
-
+    @IBAction func btnStopLoading(_ sender: Any) {
+        btnLoad.stopLoading()
+    }
+    
 }
 
