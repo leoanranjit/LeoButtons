@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		179392C0E6D155D1DF16359A79D84D96 /* LeoButtons-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B265E548C07DD8F6FFC58245D6A26EDA /* LeoButtons-dummy.m */; };
+		33F1E3BE83E05CC1A1D9018C69137B76 /* Pods-LeoButtons_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A862DEBB83B8E10CDA16C4672D7BBE07 /* Pods-LeoButtons_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42A24283B16A1A0C61C6F6F773428D33 /* LeoButtons-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C9CC95E008E852F0B98A48E8BBAFDC2 /* LeoButtons-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44A4E87B81614CCBBAFA8821DDC1CE9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D86FA600AF1EC2E244D80BC1F4BED6F /* Pods-LeoButtons_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B413B20A1D6F3A77994B17C86828185 /* Pods-LeoButtons_Tests-dummy.m */; };
+		72D94AF62D304BAD0F43EC54B051F338 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7FD1AA5112FD334BEB94737DA2E5D1C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8B76DB427C41909ABA600A3E67F80630 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87003D148CA8CEA80AC409A8809BC9E4 /* ReplaceMe.swift */; };
+		B0075FB573754864A7644CA1067A2315 /* Pods-LeoButtons_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B038D2ECC9EB034C2A158C8969053AF2 /* Pods-LeoButtons_Example-dummy.m */; };
+		EBFB612247B9EFF5C7AE7B35E477C0E0 /* Pods-LeoButtons_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5A31FB60345B442E7CA73E1194E6164 /* Pods-LeoButtons_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65C9AE084DED71BA6EBCA1BC901FD190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 616F2EB17C4F0616E56F30DF01BA1F2F;
+			remoteInfo = "Pods-LeoButtons_Example";
+		};
+		E52BA5537A5B73C3C39155A740DC031D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A973735F21107527F3BB2F26FF3117F8;
+			remoteInfo = LeoButtons;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A3C3B4E629E022672B52C29B4B577A8 /* LeoButtons */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LeoButtons; path = LeoButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3D0A2BB48C84C19CE0A82D10538919 /* Pods-LeoButtons_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoButtons_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		11F81BB071F69DA882E81C2ACC517110 /* LeoButtons-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LeoButtons-Info.plist"; sourceTree = "<group>"; };
+		1A8C83C43C88E4533F058C5AAFC5B3E4 /* Pods-LeoButtons_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoButtons_Tests-Info.plist"; sourceTree = "<group>"; };
+		1F721067C26B5C39FFCBFA3A8927FCF4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		211F2A78EB63B8B17652E63C71137919 /* Pods-LeoButtons_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LeoButtons_Example-frameworks.sh"; sourceTree = "<group>"; };
+		238D84F3EACD8A5BF76C15E499D87A0B /* Pods-LeoButtons_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LeoButtons_Tests"; path = Pods_LeoButtons_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F8C262D27AFF43A0B725CB0EFBAC1F5 /* Pods-LeoButtons_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeoButtons_Tests.modulemap"; sourceTree = "<group>"; };
+		484BD3BD5BB085DFBCAA15EE1266A575 /* Pods-LeoButtons_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LeoButtons_Example"; path = Pods_LeoButtons_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BAD45541E6C31D793F94D1F394D6AD0 /* Pods-LeoButtons_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoButtons_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C378B6E1E116F746B7600AA8D4EBCE4 /* Pods-LeoButtons_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoButtons_Example-Info.plist"; sourceTree = "<group>"; };
+		72BBB62ADB08596917C384084166C8E7 /* LeoButtons.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoButtons.debug.xcconfig; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B413B20A1D6F3A77994B17C86828185 /* Pods-LeoButtons_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoButtons_Tests-dummy.m"; sourceTree = "<group>"; };
+		87003D148CA8CEA80AC409A8809BC9E4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = LeoButtons/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		8FBA792E7C8343431768362D4D7328F2 /* Pods-LeoButtons_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoButtons_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		99DACD8E151805C7D6C07BA9A7DEB107 /* Pods-LeoButtons_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LeoButtons_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		9C9CC95E008E852F0B98A48E8BBAFDC2 /* LeoButtons-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoButtons-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5A31FB60345B442E7CA73E1194E6164 /* Pods-LeoButtons_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoButtons_Example-umbrella.h"; sourceTree = "<group>"; };
+		A7A5BD84BF61418E8001CA89C394D98D /* LeoButtons.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LeoButtons.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A862DEBB83B8E10CDA16C4672D7BBE07 /* Pods-LeoButtons_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LeoButtons_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B038D2ECC9EB034C2A158C8969053AF2 /* Pods-LeoButtons_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LeoButtons_Example-dummy.m"; sourceTree = "<group>"; };
+		B265E548C07DD8F6FFC58245D6A26EDA /* LeoButtons-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LeoButtons-dummy.m"; sourceTree = "<group>"; };
+		B57EB41A0C20D285D1C95D73CDC8D520 /* Pods-LeoButtons_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoButtons_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC040C5BECBF48D82BF87F9197FA5B10 /* LeoButtons.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LeoButtons.modulemap; sourceTree = "<group>"; };
+		DB97643CAB134EA31C9E372EC8C42710 /* Pods-LeoButtons_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LeoButtons_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E98DE7C27D0D273EF4CCD63FC664BFA2 /* Pods-LeoButtons_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoButtons_Example.release.xcconfig"; sourceTree = "<group>"; };
+		EEE84A7287EE1E140FF7F4141C5EB196 /* Pods-LeoButtons_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LeoButtons_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EF0AF209C6E78692AF5DE67000E09406 /* LeoButtons.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeoButtons.release.xcconfig; sourceTree = "<group>"; };
+		F017FC718A603F73CA5882A5493E5EB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F106C3B6E44367515F45E540C6BC7514 /* LeoButtons-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LeoButtons-prefix.pch"; sourceTree = "<group>"; };
+		FFF67D13945C39FB07B18C8F94E9A482 /* Pods-LeoButtons_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LeoButtons_Example.modulemap"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		472140882F813BEFBAA20B9C0668B91C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72D94AF62D304BAD0F43EC54B051F338 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C6807138DCE169CABEDECC9C64D3D6C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44A4E87B81614CCBBAFA8821DDC1CE9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACD221CCB9C42DFFECD8AD91ECB7E42A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD1AA5112FD334BEB94737DA2E5D1C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FD124ADCE1FF661847911C0ED11CB74 /* LeoButtons */ = {
+			isa = PBXGroup;
+			children = (
+				87003D148CA8CEA80AC409A8809BC9E4 /* ReplaceMe.swift */,
+				537DE715777BAE6519B01090FF818D19 /* Pod */,
+				96E4086C241F2AF6F8E5929903DE2030 /* Support Files */,
+			);
+			name = LeoButtons;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		35B85E0CEDD1E0780A8DCA3C54497638 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DB7D4B0B0A7CB48A815586B88DF9349 /* Pods-LeoButtons_Example */,
+				BB9C190CAA3334584FACC4F95C8B70C7 /* Pods-LeoButtons_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		537DE715777BAE6519B01090FF818D19 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				A7A5BD84BF61418E8001CA89C394D98D /* LeoButtons.podspec */,
+				F017FC718A603F73CA5882A5493E5EB8 /* LICENSE */,
+				1F721067C26B5C39FFCBFA3A8927FCF4 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6DB7D4B0B0A7CB48A815586B88DF9349 /* Pods-LeoButtons_Example */ = {
+			isa = PBXGroup;
+			children = (
+				FFF67D13945C39FB07B18C8F94E9A482 /* Pods-LeoButtons_Example.modulemap */,
+				DB97643CAB134EA31C9E372EC8C42710 /* Pods-LeoButtons_Example-acknowledgements.markdown */,
+				99DACD8E151805C7D6C07BA9A7DEB107 /* Pods-LeoButtons_Example-acknowledgements.plist */,
+				B038D2ECC9EB034C2A158C8969053AF2 /* Pods-LeoButtons_Example-dummy.m */,
+				211F2A78EB63B8B17652E63C71137919 /* Pods-LeoButtons_Example-frameworks.sh */,
+				4C378B6E1E116F746B7600AA8D4EBCE4 /* Pods-LeoButtons_Example-Info.plist */,
+				A5A31FB60345B442E7CA73E1194E6164 /* Pods-LeoButtons_Example-umbrella.h */,
+				8FBA792E7C8343431768362D4D7328F2 /* Pods-LeoButtons_Example.debug.xcconfig */,
+				E98DE7C27D0D273EF4CCD63FC664BFA2 /* Pods-LeoButtons_Example.release.xcconfig */,
+			);
+			name = "Pods-LeoButtons_Example";
+			path = "Target Support Files/Pods-LeoButtons_Example";
+			sourceTree = "<group>";
+		};
+		96E4086C241F2AF6F8E5929903DE2030 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC040C5BECBF48D82BF87F9197FA5B10 /* LeoButtons.modulemap */,
+				B265E548C07DD8F6FFC58245D6A26EDA /* LeoButtons-dummy.m */,
+				11F81BB071F69DA882E81C2ACC517110 /* LeoButtons-Info.plist */,
+				F106C3B6E44367515F45E540C6BC7514 /* LeoButtons-prefix.pch */,
+				9C9CC95E008E852F0B98A48E8BBAFDC2 /* LeoButtons-umbrella.h */,
+				72BBB62ADB08596917C384084166C8E7 /* LeoButtons.debug.xcconfig */,
+				EF0AF209C6E78692AF5DE67000E09406 /* LeoButtons.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LeoButtons";
+			sourceTree = "<group>";
+		};
+		AF8D25518E0E40A2C262E78E54A118F1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FD124ADCE1FF661847911C0ED11CB74 /* LeoButtons */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BB9C190CAA3334584FACC4F95C8B70C7 /* Pods-LeoButtons_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2F8C262D27AFF43A0B725CB0EFBAC1F5 /* Pods-LeoButtons_Tests.modulemap */,
+				4BAD45541E6C31D793F94D1F394D6AD0 /* Pods-LeoButtons_Tests-acknowledgements.markdown */,
+				0E3D0A2BB48C84C19CE0A82D10538919 /* Pods-LeoButtons_Tests-acknowledgements.plist */,
+				7B413B20A1D6F3A77994B17C86828185 /* Pods-LeoButtons_Tests-dummy.m */,
+				1A8C83C43C88E4533F058C5AAFC5B3E4 /* Pods-LeoButtons_Tests-Info.plist */,
+				A862DEBB83B8E10CDA16C4672D7BBE07 /* Pods-LeoButtons_Tests-umbrella.h */,
+				B57EB41A0C20D285D1C95D73CDC8D520 /* Pods-LeoButtons_Tests.debug.xcconfig */,
+				EEE84A7287EE1E140FF7F4141C5EB196 /* Pods-LeoButtons_Tests.release.xcconfig */,
+			);
+			name = "Pods-LeoButtons_Tests";
+			path = "Target Support Files/Pods-LeoButtons_Tests";
+			sourceTree = "<group>";
+		};
+		C04FED402BB8CB2A88B6158E73E75072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C3B4E629E022672B52C29B4B577A8 /* LeoButtons */,
+				484BD3BD5BB085DFBCAA15EE1266A575 /* Pods-LeoButtons_Example */,
+				238D84F3EACD8A5BF76C15E499D87A0B /* Pods-LeoButtons_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AF8D25518E0E40A2C262E78E54A118F1 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C04FED402BB8CB2A88B6158E73E75072 /* Products */,
+				35B85E0CEDD1E0780A8DCA3C54497638 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		782A0D98E1A948AE477C4E7174C11F13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFB612247B9EFF5C7AE7B35E477C0E0 /* Pods-LeoButtons_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90A4E4DF2FCB06D6F04AE9274BBF0E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A24283B16A1A0C61C6F6F773428D33 /* LeoButtons-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B52E400C3A7C7C39FAC8A37A53EF50E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F1E3BE83E05CC1A1D9018C69137B76 /* Pods-LeoButtons_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		616F2EB17C4F0616E56F30DF01BA1F2F /* Pods-LeoButtons_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94099856069BF092FC2EF43B7C71DB41 /* Build configuration list for PBXNativeTarget "Pods-LeoButtons_Example" */;
+			buildPhases = (
+				782A0D98E1A948AE477C4E7174C11F13 /* Headers */,
+				DF7C3CC5B0E5E70B82C9DE521E6176D5 /* Sources */,
+				ACD221CCB9C42DFFECD8AD91ECB7E42A /* Frameworks */,
+				0ADE3070DB05B493BA408B3CD8B4EE8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C55D9B6BA43600081BA4E58EB7B05334 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoButtons_Example";
+			productName = Pods_LeoButtons_Example;
+			productReference = 484BD3BD5BB085DFBCAA15EE1266A575 /* Pods-LeoButtons_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		A973735F21107527F3BB2F26FF3117F8 /* LeoButtons */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12216AD9A95E18D3B18E1C0AD3B54A34 /* Build configuration list for PBXNativeTarget "LeoButtons" */;
+			buildPhases = (
+				A90A4E4DF2FCB06D6F04AE9274BBF0E5 /* Headers */,
+				4226B07E311E473A36B27DDF27EED909 /* Sources */,
+				8C6807138DCE169CABEDECC9C64D3D6C /* Frameworks */,
+				AF52B4B173C2CC344DC6AC0BDABD22F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeoButtons;
+			productName = LeoButtons;
+			productReference = 0A3C3B4E629E022672B52C29B4B577A8 /* LeoButtons */;
+			productType = "com.apple.product-type.framework";
+		};
+		B793501BC0C76D85C068507A5CDB72E4 /* Pods-LeoButtons_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F6D317A2BAB6866ACD47705D7C8EC8F /* Build configuration list for PBXNativeTarget "Pods-LeoButtons_Tests" */;
+			buildPhases = (
+				B52E400C3A7C7C39FAC8A37A53EF50E0 /* Headers */,
+				7B2B8D8ADB88FE2ECAC0D493F6E891BD /* Sources */,
+				472140882F813BEFBAA20B9C0668B91C /* Frameworks */,
+				1B354A64683BB77DAC42DE4B4005C0C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4D64B6CE4D8BDA3959D8136EBDC0398 /* PBXTargetDependency */,
+			);
+			name = "Pods-LeoButtons_Tests";
+			productName = Pods_LeoButtons_Tests;
+			productReference = 238D84F3EACD8A5BF76C15E499D87A0B /* Pods-LeoButtons_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C04FED402BB8CB2A88B6158E73E75072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A973735F21107527F3BB2F26FF3117F8 /* LeoButtons */,
+				616F2EB17C4F0616E56F30DF01BA1F2F /* Pods-LeoButtons_Example */,
+				B793501BC0C76D85C068507A5CDB72E4 /* Pods-LeoButtons_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ADE3070DB05B493BA408B3CD8B4EE8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B354A64683BB77DAC42DE4B4005C0C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF52B4B173C2CC344DC6AC0BDABD22F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4226B07E311E473A36B27DDF27EED909 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179392C0E6D155D1DF16359A79D84D96 /* LeoButtons-dummy.m in Sources */,
+				8B76DB427C41909ABA600A3E67F80630 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B2B8D8ADB88FE2ECAC0D493F6E891BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D86FA600AF1EC2E244D80BC1F4BED6F /* Pods-LeoButtons_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7C3CC5B0E5E70B82C9DE521E6176D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0075FB573754864A7644CA1067A2315 /* Pods-LeoButtons_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4D64B6CE4D8BDA3959D8136EBDC0398 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LeoButtons_Example";
+			target = 616F2EB17C4F0616E56F30DF01BA1F2F /* Pods-LeoButtons_Example */;
+			targetProxy = 65C9AE084DED71BA6EBCA1BC901FD190 /* PBXContainerItemProxy */;
+		};
+		C55D9B6BA43600081BA4E58EB7B05334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeoButtons;
+			target = A973735F21107527F3BB2F26FF3117F8 /* LeoButtons */;
+			targetProxy = E52BA5537A5B73C3C39155A740DC031D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0B9B87DE6276331109E18D4FAFE7D72D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72BBB62ADB08596917C384084166C8E7 /* LeoButtons.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeoButtons/LeoButtons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoButtons/LeoButtons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoButtons/LeoButtons.modulemap";
+				PRODUCT_MODULE_NAME = LeoButtons;
+				PRODUCT_NAME = LeoButtons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		227239B373F6BF0FEB3070EBA638CDA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E98DE7C27D0D273EF4CCD63FC664BFA2 /* Pods-LeoButtons_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoButtons_Example/Pods-LeoButtons_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoButtons_Example/Pods-LeoButtons_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3FD9F63FF068C60B1832F65D3A014B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FBA792E7C8343431768362D4D7328F2 /* Pods-LeoButtons_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoButtons_Example/Pods-LeoButtons_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoButtons_Example/Pods-LeoButtons_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D7C451E11739DCF13D21BFA547B329E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0AF209C6E78692AF5DE67000E09406 /* LeoButtons.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LeoButtons/LeoButtons-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LeoButtons/LeoButtons-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LeoButtons/LeoButtons.modulemap";
+				PRODUCT_MODULE_NAME = LeoButtons;
+				PRODUCT_NAME = LeoButtons;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF948BB447CD2E82248E95EBB22290C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEE84A7287EE1E140FF7F4141C5EB196 /* Pods-LeoButtons_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoButtons_Tests/Pods-LeoButtons_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoButtons_Tests/Pods-LeoButtons_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E230524CC7090227619B3CA940C0C345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B57EB41A0C20D285D1C95D73CDC8D520 /* Pods-LeoButtons_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LeoButtons_Tests/Pods-LeoButtons_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LeoButtons_Tests/Pods-LeoButtons_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12216AD9A95E18D3B18E1C0AD3B54A34 /* Build configuration list for PBXNativeTarget "LeoButtons" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9B87DE6276331109E18D4FAFE7D72D /* Debug */,
+				D7C451E11739DCF13D21BFA547B329E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94099856069BF092FC2EF43B7C71DB41 /* Build configuration list for PBXNativeTarget "Pods-LeoButtons_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FD9F63FF068C60B1832F65D3A014B31 /* Debug */,
+				227239B373F6BF0FEB3070EBA638CDA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F6D317A2BAB6866ACD47705D7C8EC8F /* Build configuration list for PBXNativeTarget "Pods-LeoButtons_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E230524CC7090227619B3CA940C0C345 /* Debug */,
+				DF948BB447CD2E82248E95EBB22290C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

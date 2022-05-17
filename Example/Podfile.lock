@@ -1,0 +1,16 @@
+PODS:
+  - LeoButtons (0.1.0)
+
+DEPENDENCIES:
+  - LeoButtons (from `../`)
+
+EXTERNAL SOURCES:
+  LeoButtons:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LeoButtons: 5924d47cbf9af5c25ef9d6f209daabf10dbb48a1
+
+PODFILE CHECKSUM: f1b8c222ae29ffe05cec1998247920c71f00fa4c
+
+COCOAPODS: 1.11.2
