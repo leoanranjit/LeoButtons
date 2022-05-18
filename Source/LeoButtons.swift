@@ -45,10 +45,10 @@ public class LeoButtons: UIButton {
     @IBInspectable
     var expandSize: CGFloat{
         get{
-            return size
+            return CGFloat(size)
         }
         set{
-            self.size = newValue
+            self.size = Double(newValue)
         }
     }
     
@@ -73,7 +73,7 @@ public class LeoButtons: UIButton {
     @IBInspectable
     var borderColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.borderColor ?? CGColor(gray: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.borderColor ?? CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0))
         }
         set{
             self.layer.borderColor = newValue.cgColor
@@ -82,7 +82,7 @@ public class LeoButtons: UIButton {
     @IBInspectable
     var shadowColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.shadowColor ?? CGColor(gray: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.shadowColor ?? CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0))
         }
         set{
             self.layer.shadowColor = newValue.cgColor
@@ -246,24 +246,24 @@ public class LeoButtons: UIButton {
         UIView.animate(withDuration: 0.05) {
             self.view1.alpha = 1
         }
-        UIView.animate(withDuration: duration, delay: 0, options: [.repeat, .autoreverse] , animations: {
+        UIView.animate(withDuration: TimeInterval(duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
             self.view1.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
             self.view1.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
         })
-        DispatchQueue.main.asyncAfter(deadline: .now() + duration/2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(duration/2)) {
             UIView.animate(withDuration: 0.1) {
                 self.view2.alpha = 1
             }
-            UIView.animate(withDuration: self.duration, delay: 0, options: [.repeat, .autoreverse] , animations: {
+            UIView.animate(withDuration: TimeInterval(self.duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
                 self.view2.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
                 self.view2.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
             })
         }
-        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(duration)) {
             UIView.animate(withDuration: 0.1) {
                 self.view3.alpha = 1
             }
-            UIView.animate(withDuration: self.duration, delay: 0, options: [.repeat, .autoreverse] , animations: {
+            UIView.animate(withDuration: TimeInterval(self.duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
                 self.view3.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
                 self.view3.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
             })
@@ -286,7 +286,7 @@ public class LeoButtons: UIButton {
         addTarget(self, action: #selector(animateUp), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
     }
     @objc private func animateDown(sender: UIButton) {
-        animate(sender, transform: CGAffineTransform.identity.scaledBy(x: size, y: size))
+        animate(sender, transform: CGAffineTransform.identity.scaledBy(x: CGFloat(size), y: CGFloat(size)))
         let impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .light)
         impactFeedbackgenerator.prepare()
         impactFeedbackgenerator.impactOccurred()
@@ -297,7 +297,7 @@ public class LeoButtons: UIButton {
     }
     
     private func animate(_ button: UIButton, transform: CGAffineTransform) {
-        self.transform = CGAffineTransform(scaleX: size, y: size)
+        self.transform = CGAffineTransform(scaleX: CGFloat(size), y: CGFloat(size))
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: CGFloat(0.40), initialSpringVelocity: CGFloat(8.0), options: UIView.AnimationOptions.allowUserInteraction, animations: {
             button.transform = transform
         }, completion: { Void in()  }
