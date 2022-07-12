@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LeoButtons'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'LeoButtons is a UIButton with on-click animation, loading animation and easy customization.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  'LeoButtons is a UIButton with on-click animation, loading animation and easy customization. You can customize the size of the button on click, the color, translation, spacing and size of the loading dots. You can also easily add border, shadow and corner radius of the button.'
+  'LeoButtons is a UIButton with on-click animation, loading animation and easy customization. You can customize the size of the button on click, the color, translation, spacing and size of the loading dots. You can also easily add border, shadow and corner radius of the button. Now with support for Swift 4 and iOS 10.0 or newer.'
                        DESC
 
   s.homepage         = 'https://github.com/leoanranjit/LeoButtons'
@@ -28,12 +28,12 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/leoanranjit/LeoButtons.git', :tag => s.version.to_s }
    s.social_media_url = 'https://www.instagram.com/leoanranjit'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'Source/**/*.swift'
-  s.swift_versions = '5.0'
+  s.swift_versions = '4.0'
   s.platforms = {
-      "ios": "13.0"
+      "ios": "10.0"
   }
   
   # s.resource_bundles = {
