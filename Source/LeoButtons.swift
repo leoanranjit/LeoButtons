@@ -18,7 +18,6 @@ enum Direction : String {
 
 public class LeoButtons: UIButton {
     // MARK: - Constants and variables
-    let indicator = UIActivityIndicatorView(style: .medium)
     
     var btnTitle = ""
     var btnImage = UIImage()
@@ -73,7 +72,7 @@ public class LeoButtons: UIButton {
     @IBInspectable
     var borderColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.borderColor ?? CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.borderColor ?? UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor)
         }
         set{
             self.layer.borderColor = newValue.cgColor
@@ -82,7 +81,7 @@ public class LeoButtons: UIButton {
     @IBInspectable
     var shadowColor : UIColor{
         get{
-            return UIColor(cgColor: self.layer.shadowColor ?? CGColor(srgbRed: 0, green: 0, blue: 0, alpha: 0))
+            return UIColor(cgColor: self.layer.shadowColor ?? UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor)
         }
         set{
             self.layer.shadowColor = newValue.cgColor
@@ -124,7 +123,7 @@ public class LeoButtons: UIButton {
         }
     }
     
-    open var dotOneColor : UIColor = .black
+    open var dotOneColor : UIColor = .white
     @IBInspectable
     var _dotOneColor : UIColor = .white{
         didSet{
@@ -132,7 +131,7 @@ public class LeoButtons: UIButton {
         }
     }
     
-    open var dotTwoColor : UIColor = .black
+    open var dotTwoColor : UIColor = .white
     @IBInspectable
     var _dotTwoColor : UIColor = .white{
         didSet{
@@ -140,7 +139,7 @@ public class LeoButtons: UIButton {
         }
     }
     
-    open var dotThreeColor : UIColor = .black
+    open var dotThreeColor : UIColor = .white
     @IBInspectable
     var _dotThreeColor : UIColor = .white{
         didSet{
@@ -164,20 +163,12 @@ public class LeoButtons: UIButton {
         }
     }
     
-    open var translation : CGFloat = 6
+    open var translation : CGFloat = 4
     @IBInspectable
-    var _translation : CGFloat = 6{
+    var _translation : CGFloat = 4{
         didSet{
             translation = _translation
         }
-    }
-    
-    
-    
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
     }
     
     // MARK: - ViewController Functions
@@ -197,13 +188,11 @@ public class LeoButtons: UIButton {
         }
     }
     
-    
     // MARK: - Additional Functions
     public func startLoading(){
         self.isLoading = true
         self.btnTitle = self.title(for: .normal) ?? ""
         self.btnImage = self.image(for: .normal) ?? UIImage()
-        self.indicator.translatesAutoresizingMaskIntoConstraints = false
         self.isUserInteractionEnabled = false
         self.setTitle("", for: .normal)
         self.setImage(UIImage(), for: .normal)
@@ -285,6 +274,18 @@ public class LeoButtons: UIButton {
         addTarget(self, action: #selector(animateDown), for: [.touchDown, .touchDragEnter])
         addTarget(self, action: #selector(animateUp), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
     }
+    
+    func applyGradient(colors: [CGColor])
+    {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = colors
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+        gradientLayer.frame = self.bounds
+        gradientLayer.cornerRadius = self.bounds.height/2
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
     @objc private func animateDown(sender: UIButton) {
         animate(sender, transform: CGAffineTransform.identity.scaledBy(x: CGFloat(size), y: CGFloat(size)))
         let impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .light)
@@ -308,11 +309,20 @@ public class LeoButtons: UIButton {
 extension UIViewController{
     
     func startLoading(color: UIColor) {
-        let indicator = UIActivityIndicatorView(style: .medium)
-        indicator.color = color
-        indicator.startAnimating()
-        let barButton = UIBarButtonItem(customView: indicator)
-        self.navigationItem.setRightBarButton(barButton, animated: true)
+        if #available(iOS 13.0, *) {
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .medium)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setRightBarButton(barButton, animated: true)
+        } else {
+            // Fallback on earlier versions
+            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+            indicator.color = color
+            indicator.startAnimating()
+            let barButton = UIBarButtonItem(customView: indicator)
+            self.navigationItem.setRightBarButton(barButton, animated: true)
+        }
     }
     
     func stopLoading(){
