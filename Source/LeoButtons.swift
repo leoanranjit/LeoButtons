@@ -29,13 +29,13 @@ public class LeoButtons: UIButton {
     let view3 = UIView()
     let stackView = UIStackView()
     
+    
+    open var animates : Bool = true
     @IBInspectable
-    var animates : Bool{
-        get{
-            return self.animates
-        }
-        set{
-            if newValue{
+    var _animates : Bool = true {
+        didSet{
+            animates = _animates
+            if animates{
                 setupAnimation()
             }
         }
@@ -175,7 +175,7 @@ public class LeoButtons: UIButton {
     public override func layoutSubviews() {
         super.layoutSubviews()
         DispatchQueue.main.async {
-            self.view1.layer.cornerRadius = self.view1.layer.frame.width/2
+            self.view1.layer.cornerRadius = self.view1.layer.frame.width / 2
             self.view1.clipsToBounds = true
             self.view2.layer.cornerRadius = self.view2.layer.frame.width / 2
             self.view2.clipsToBounds = true
@@ -232,32 +232,23 @@ public class LeoButtons: UIButton {
         self.addSubview(self.stackView)
         
         //Animating Views
-        UIView.animate(withDuration: 0.05) {
+        UIView.animate(withDuration: 0.2) {
             self.view1.alpha = 1
+            self.view2.alpha = 1
+            self.view3.alpha = 1
         }
         UIView.animate(withDuration: TimeInterval(duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
             self.view1.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
             self.view1.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
         })
-        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(duration/2)) {
-            UIView.animate(withDuration: 0.1) {
-                self.view2.alpha = 1
-            }
-            UIView.animate(withDuration: TimeInterval(self.duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
-                self.view2.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
-                self.view2.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
-            })
-        }
-        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(duration)) {
-            UIView.animate(withDuration: 0.1) {
-                self.view3.alpha = 1
-            }
-            UIView.animate(withDuration: TimeInterval(self.duration), delay: 0, options: [.repeat, .autoreverse] , animations: {
-                self.view3.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
-                self.view3.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
-            })
-            
-        }
+        UIView.animate(withDuration: TimeInterval(self.duration), delay: self.duration/2, options: [.repeat, .autoreverse] , animations: {
+            self.view2.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
+            self.view2.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
+        })
+        UIView.animate(withDuration: TimeInterval(self.duration), delay: self.duration, options: [.repeat, .autoreverse] , animations: {
+            self.view3.transform = CGAffineTransform(translationX: 0, y: -self.translation/2)
+            self.view3.transform = CGAffineTransform(translationX: 0, y: self.translation/2)
+        })
     }
     
     public func stopLoading(){
@@ -271,11 +262,11 @@ public class LeoButtons: UIButton {
     
     
     func setupAnimation(){
-        addTarget(self, action: #selector(animateDown), for: [.touchDown, .touchDragEnter])
-        addTarget(self, action: #selector(animateUp), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
+            addTarget(self, action: #selector(animateDown), for: [.touchDown, .touchDragEnter])
+            addTarget(self, action: #selector(animateUp), for: [.touchDragExit, .touchCancel, .touchUpInside, .touchUpOutside])
     }
     
-    func applyGradient(colors: [CGColor])
+    public func applyGradient(colors: [CGColor])
     {
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = colors
@@ -306,28 +297,5 @@ public class LeoButtons: UIButton {
     }
 }
 
-extension UIViewController{
-    
-    func startLoading(color: UIColor) {
-        if #available(iOS 13.0, *) {
-            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .medium)
-            indicator.color = color
-            indicator.startAnimating()
-            let barButton = UIBarButtonItem(customView: indicator)
-            self.navigationItem.setRightBarButton(barButton, animated: true)
-        } else {
-            // Fallback on earlier versions
-            let indicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
-            indicator.color = color
-            indicator.startAnimating()
-            let barButton = UIBarButtonItem(customView: indicator)
-            self.navigationItem.setRightBarButton(barButton, animated: true)
-        }
-    }
-    
-    func stopLoading(){
-        self.navigationItem.setRightBarButton(UIBarButtonItem(), animated: true)
-    }
-}
 
 

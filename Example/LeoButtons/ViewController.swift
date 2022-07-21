@@ -14,10 +14,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnLoad.animates = false
     }
 
     @IBAction func btnLoadAction(_ sender: Any) {
         btnLoad.startLoading()
+        
     }
     @IBAction func btnStopLoading(_ sender: Any) {
         btnLoad.stopLoading()
