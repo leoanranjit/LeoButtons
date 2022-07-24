@@ -35,9 +35,6 @@ public class LeoButtons: UIButton {
     var _animates : Bool = true {
         didSet{
             animates = _animates
-            if animates{
-                setupAnimation()
-            }
         }
     }
     
@@ -185,6 +182,9 @@ public class LeoButtons: UIButton {
         if imageView != nil {
             imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: (bounds.width - (bounds.width / 2)) - 16)
             titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: (imageView?.frame.width)!)
+        }
+        if animates{
+            setupAnimation()
         }
     }
     

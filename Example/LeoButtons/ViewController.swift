@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        btnLoad.animates = false
+        btnLoad.animates = true
     }
 
     @IBAction func btnLoadAction(_ sender: Any) {
